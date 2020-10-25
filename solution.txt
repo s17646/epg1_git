@@ -1,0 +1,11 @@
+git clone https://github.com/s17646/epg1_git.git
+cd epg1_git
+git checkout -b hw-s17646 master
+git checkout rebase-me
+git rebase hw-s17646
+git checkout hw-s17646
+git merge --ff-only rebase-me
+git merge origin/merge-me 
+nano README.md
+git add .
+git commit
